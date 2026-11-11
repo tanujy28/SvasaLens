@@ -58,7 +58,7 @@ def main():
           'Rule inside the chip was fixed from UCDDB training nights before this session.',
           'One awake volunteer doing voluntary manoeuvres; event timing from the cue schedule.',
           'Movement = gyroscope above ~1 Hz in the scored part of each event, compared with',
-          'normal breathing; logged only, it does not change any decision (27 Sept rule: > 3x = moved).']
+          'normal breathing; logged only, it does not change any decision (hold-and-try test rule: > 3x = moved).']
     text = '\n'.join(L)
     print('\n' + text)
     open(f'live_{stamp}_summary.txt', 'w').write(text + '\n')
