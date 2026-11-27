@@ -40,3 +40,4 @@ Version 2 adds a nasal thermistor, moves to a XIAO ESP32-S3, and replaces the ru
 - `notebooks/`: Colab notebooks that prepare the PhysioNet 2018 and PSG-Audio data and train both networks (PyTorch).
 - `firmware/`: V2 sketch for the XIAO ESP32-S3 (`svasalens_v2/`) and the scripts that export the trained weights to `svweights.h`.
 - `daytime_test/`: 10-minute simulated-apnea test for volunteers, and a script to summarise the results.
+- 
