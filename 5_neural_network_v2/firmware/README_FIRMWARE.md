@@ -8,16 +8,18 @@ The device finds apneas itself with the two-hospital detection network, tells ea
 |---|---|
 | `svasalens_v2/svasalens_v2.ino` | The sketch: sensors, thermistor, button, LED, SD card |
 | `svasalens_v2/svcore.h` | Filters and both networks (checked against the Python code: 415 out of 415 events identical) |
-| `svasalens_v2/svweights.h` | **Placeholder.** Replace it with the real one (step 1) |
-| `SvasaLens_Export_Weights.ipynb` | Colab notebook that makes the real `svweights.h` from your trained networks on Drive |
+| `svasalens_v2/svweights.h` | The trained weights for both networks (about 430 KB) |
+| `SvasaLens_Export_Weights.ipynb` | Colab notebook that makes `svweights.h` from your trained networks on Drive |
 | `export_weights.py` | The same export as a plain script |
 
-## Step 1: make svweights.h (about 2 minutes)
+## Step 1: svweights.h (only after retraining)
+
+`svweights.h` already holds the trained weights. To make a new one after retraining the networks:
 
 1. Open `SvasaLens_Export_Weights.ipynb` in Colab. No GPU is needed.
 2. Runtime > **Run all**, and allow Drive access.
 3. `svweights.h` downloads (about 430 KB). A copy is also saved in My Drive/SvasaLens_Firmware.
-4. Put it in the `svasalens_v2` folder, replacing the placeholder.
+4. Put it in the `svasalens_v2` folder, replacing the old one.
 
 ## Step 2: Arduino IDE settings (same as before)
 
