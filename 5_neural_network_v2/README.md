@@ -23,3 +23,5 @@ The typing network was trained on 38,730 apneas from 666 PhysioNet 2018 patients
 | `firmware/` | Weight export scripts and firmware notes |
 | `firmware/svasalens_v2/` | Arduino sketch for the XIAO ESP32-S3, with filters and both networks in C++ |
 | `daytime_test/` | 10-minute simulated-apnea test for volunteers, and a script to summarise results |
+
+See the [main README](../README.md) for the V1 code and setup.
