@@ -1,4 +1,4 @@
-# SvasaLens: code for the paper
+# SvasaLens: code for V1 (paper) and V2
 
 Code for the paper on telling obstructive and central sleep apnea apart using breathing effort, with an Arduino Nano and two motion sensors.
 
