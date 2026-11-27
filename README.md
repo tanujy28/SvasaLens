@@ -32,3 +32,11 @@ The complete device makes every decision on the Nano. `live_log.py` only records
 - `v1/`: live run 1 (`svasalens_live` sketch and `live_log.py`).
 - `v2/`: live run 2 (`svasalens_live_v2` sketch and `live_log.py`).
 - `dashboard/`: source code of the SvasaLens dashboard app (`SvasaLens.exe`), which shows the chest and belly signals and each of the chip's decisions, live or from a saved session. It only displays what the Nano sends; the decisions are made on the Nano. On Windows, run `build_exe.bat` to build `SvasaLens.exe` (uses PyInstaller and `SvasaLens.spec`; keep the `fonts` folder next to the script).
+
+## 5. Neural networks, SvasaLens V2 (`5_neural_network_v2/`)
+
+Version 2 adds a nasal thermistor, moves to a XIAO ESP32-S3, and replaces the rule with two small neural networks: one finds apneas, the other types them as obstructive or central. See the folder's README for results and details.
+
+- `notebooks/`: Colab notebooks that prepare the PhysioNet 2018 and PSG-Audio data and train both networks (PyTorch).
+- `firmware/`: V2 sketch for the XIAO ESP32-S3 (`svasalens_v2/`) and the scripts that export the trained weights to `svweights.h`.
+- `daytime_test/`: 10-minute simulated-apnea test for volunteers, and a script to summarise the results.
