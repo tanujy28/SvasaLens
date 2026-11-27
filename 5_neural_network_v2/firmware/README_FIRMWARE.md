@@ -78,7 +78,7 @@ The thermistor and apnea-chance numbers mean nothing until the thermistor is con
 
 ## Known limits (to check later)
 
-- **Not compiled for the XIAO yet.** I couldn't install the Arduino compiler here, so I checked the code by compiling it on a laptop against stand-in Arduino functions. If the Arduino IDE shows an error, send me the text.
+- **Not compiled for the XIAO yet.** The code has only been checked by compiling it on a laptop against stand-in Arduino functions, so the Arduino IDE may still show errors that need fixing.
 - **Thermistor direction (`THERM_SIGN`).** This is set so breathing out raises the voltage. Whether the hospital's thermistor used the same direction isn't known. Once we have a few real nights, we can test both settings on the saved data.
 - **Turning over in bed.** The breathing direction is set during the 30 s calibration. The raw x/y/z are saved, so the signal can be worked out again afterwards if the patient turns over.
 - **Typing each apnea takes a fraction of a second.** The device catches up on the readings straight after, so nothing is lost.
