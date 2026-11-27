@@ -46,8 +46,6 @@ Copy the SD card files and `record_sheet.csv` into one folder, then on any compu
 It writes `summary.txt` with the headline:
 > "On N people, SvasaLens found and correctly typed X of Y simulated apneas (Z%, 95% range A–B%)."
 
-Or just send me the files and I'll run it.
-
 ## Scoring rules (fixed before testing; don't change them halfway)
 - A hold is **found** if the device marks an apnea that overlaps the hold, or the 5 s after it, by at least 1 s. Each hold can match at most one detection.
 - **Right type**: relaxed hold → CENTRAL, try → OBSTRUCTIVE.
