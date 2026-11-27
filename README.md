@@ -1,6 +1,6 @@
 # SvasaLens: code for V1 (paper) and V2
 
-Code for the paper on telling obstructive and central sleep apnea apart using breathing effort, with an Arduino Nano and two motion sensors.
+Code for the paper on telling obstructive and central sleep apnea apart using breathing effort, with an Arduino Nano and two motion sensors. Each folder also has its own README.
 
 Python scripts need Python 3 with numpy, scipy, matplotlib and pyserial (and scikit-learn for `fit_rules.py`). Arduino sketches (.ino) are opened in the Arduino IDE. Keep each .ino file in its own folder, together with its .h files. The database scripts expect the UCDDB files from PhysioNet (https://physionet.org/content/ucddb/1.0.0/) in the folder named at the top of each script.
 
